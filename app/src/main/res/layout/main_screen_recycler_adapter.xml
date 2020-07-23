@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+android:layout_margin="0dp"
+    android:background="#141d26"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="25dp"
+        card_view:cardElevation="0dp"
+        android:background="#141d26"
+        android:id="@+id/cv"
+        android:layout_marginBottom="7dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#141d26"
+            >
+
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="#4CAF50"
+android:foreground="@drawable/test"
+
+
+                >
+
+            </ImageView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/person_photo"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/imrankhan"
+                app:civ_border_width="2dp"
+                android:scaleType="centerCrop"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="-49dp"
+                android:layout_below="@+id/cover"
+                app:civ_circle_background_color="#fff"
+                app:civ_border_color="#141d26"/>
+
+<!--            <ImageView-->
+<!--                android:id="@+id/person_photo"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_below="@+id/cover"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_marginLeft="0dp"-->
+<!--                android:layout_marginTop="-49dp"-->
+<!--                android:padding="0dp"-->
+<!--                android:src="@drawable/imrankhan" />-->
+           <Button
+               android:id="@+id/follow"
+               android:layout_width="120dp"
+               android:layout_height="35dp"
+               android:layout_marginTop="5dp"
+               android:layout_below="@id/cover"
+               android:text="Follow"
+               android:textColor="#00acee"
+               android:textStyle="bold"
+               android:background="@drawable/circle"
+
+               android:layout_alignEnd="@id/person_age"
+               ></Button>
+
+            <TextView
+                android:id="@+id/person_name"
+                style="@style/tw__TweetFullName.Compact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+android:layout_below="@+id/person_photo"
+               android:padding="0dp"
+                android:text="Imran Khan"
+
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_age"
+
+
+                android:gravity="clip_vertical"
+                android:text="Imran Ahmed Khan Niazi HI PP (Urdu: عمران احمد خان نیازی‎; born 5 October 1952) is the 22nd and current Prime Minister of Pakistan and the chairman of the Pakistan Tehreek-e-Insaf (PTI). ... Khan retired from cricket in 1992, as one of Pakistan's most successful players.
+Founded: Pakistan Tehreek-e-Insaf, Namal Inst...
+Born: 5 October 1952, Lahore
+Team: Pakistan national cricket team"
+
+                android:layout_below="@+id/person_name"
+
+                style="@style/tw__TweetText.Compact"
+                android:textColor="#ffffff"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
